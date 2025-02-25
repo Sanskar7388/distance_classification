@@ -2,6 +2,11 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
+import wandb
+
+# Initialize WandB
+wandb.login(key="c468f0a8ae0c118cf6cc735f7c2b1e8f6365a3c5")  # Replace with your actual API key
+wandb.init(project="distance_classification_project")
 
 # Sample dataset
 data = {
@@ -23,4 +28,8 @@ model.fit(X_train, y_train)
 
 # Predict
 predictions = model.predict(X_test)
+wandb.log({"Predictions": predictions.tolist()})
+
 print("Predictions:", predictions)
+
+wandb.finish()
