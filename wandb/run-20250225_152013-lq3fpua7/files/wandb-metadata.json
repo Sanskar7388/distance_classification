@@ -1,0 +1,31 @@
+{
+  "os":  "Windows-11-10.0.22631-SP0",
+  "python":  "CPython 3.13.0",
+  "startedAt":  "2025-02-25T09:50:13.917157Z",
+  "program":  "C:\\Users\\sansk\\OneDrive\\Desktop\\MLPR\\distance_classification.py",
+  "codePath":  "distance_classification.py",
+  "git":  {
+    "remote":  "https://github.com/Sanskar7388/distance_classification.git",
+    "commit":  "3a4e18bc6ff73c8d54f19365615b60537d8c9ad7"
+  },
+  "email":  "sanskarsengar5@gmail.com",
+  "root":  "C:\\Users\\sansk\\OneDrive\\Desktop\\MLPR",
+  "host":  "Sanskar",
+  "executable":  "C:\\Users\\sansk\\OneDrive\\Desktop\\MLPR\\venv\\Scripts\\python.exe",
+  "codePathLocal":  "distance_classification.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "353768566784",
+      "used":  "229659140096"
+    }
+  },
+  "memory":  {
+    "total":  "8362713088"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  }
+}

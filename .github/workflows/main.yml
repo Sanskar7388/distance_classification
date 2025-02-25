@@ -1,4 +1,4 @@
-name: Run Tests
+name: Run Tests and Log to WandB
 on: [push]
 
 jobs:
@@ -6,12 +6,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+      
       - name: Install dependencies
         run: |
-          pip install numpy pandas scikit-learn
-      - name: Run test script
+          pip install numpy pandas scikit-learn wandb
+      
+      - name: Set up WandB API Key
+        run: echo "WANDB_API_KEY=your-wandb-api-key" >> $GITHUB_ENV  # Replace with your API key
+
+      - name: Run the script
         run: python distance_classification.py
