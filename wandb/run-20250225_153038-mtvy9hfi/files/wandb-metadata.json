@@ -1,0 +1,31 @@
+{
+  "os":  "Windows-11-10.0.22631-SP0",
+  "python":  "CPython 3.13.0",
+  "startedAt":  "2025-02-25T10:00:38.183032Z",
+  "program":  "c:\\Users\\sansk\\OneDrive\\Desktop\\MLPR\\sanskar_lab-5.ipynb",
+  "codePath":  "sanskar_lab-5.ipynb",
+  "git":  {
+    "remote":  "https://github.com/Sanskar7388/distance_classification.git",
+    "commit":  "349a2845935e65ce95eafc10c7784671136dbf31"
+  },
+  "email":  "sanskarsengar5@gmail.com",
+  "root":  "c:\\Users\\sansk\\OneDrive\\Desktop\\MLPR",
+  "host":  "Sanskar",
+  "executable":  "c:\\Users\\sansk\\OneDrive\\Desktop\\MLPR\\venv\\Scripts\\python.exe",
+  "codePathLocal":  "sanskar_lab-5.ipynb",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "353768566784",
+      "used":  "229817618432"
+    }
+  },
+  "memory":  {
+    "total":  "8362713088"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  }
+}
