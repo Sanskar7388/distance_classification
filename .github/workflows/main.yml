@@ -12,9 +12,20 @@ jobs:
       - name: Install dependencies
         run: |
           pip install numpy pandas matplotlib scikit-learn opencv-python wandb jupyter
+      - name: Display Python version and installed packages
+        run: |
+          python --version
+          pip list
       - name: Run Jupyter Notebook
         run: |
           jupyter nbconvert --to notebook --execute sanskar_lab-5.ipynb --output executed_notebook.ipynb
+        env:
+          pythonLocation: /opt/hostedtoolcache/Python/3.11.11/x64
+          PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.11/x64/lib/pkgconfig
+          Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.11/x64
+          Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.11/x64
+          Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.11/x64
+          LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.11/x64/lib
       - name: Verify Notebook Execution
         run: |
           if [ -f "executed_notebook.ipynb" ]; then
@@ -22,4 +33,3 @@ jobs:
           else
             echo "Notebook execution failed"
             exit 1
-          fi
