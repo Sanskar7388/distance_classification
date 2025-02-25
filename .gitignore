@@ -1,6 +1,2 @@
-# Ignore the virtual environment
 venv/
-__pycache__/
-*.log
-*.csv
-*.ipynb_checkpoints/
+wandb/
